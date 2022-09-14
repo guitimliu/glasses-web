@@ -1,0 +1,68 @@
+.header {
+    background-color: #AA0601;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        @include size(80px, 48.57px);
+        opacity: 1;
+        transition: opacity .5s;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__menu-button {
+        @include pad() {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: none;
+        
+        @include pad {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        &-item {
+            font-size: 16px;
+
+            @include pad() {
+                margin-left: 64px;
+                font-size: 20px;
+            }
+
+            &-link {
+                color: #fff;
+                text-decoration: none;
+                opacity: 1;
+                transition: opacity .5s;
+            }
+
+            &-link::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background-color: #fff;
+                transition: width .5s;
+            }
+
+            &-link:hover {
+                opacity: .8;
+            }
+
+            &-link:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

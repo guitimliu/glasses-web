@@ -1,0 +1,13 @@
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 12px;
+
+    @include pad() {
+        max-width: 720px;
+    }
+
+    @include desktop() {
+        max-width: 1320px;
+    }
+}

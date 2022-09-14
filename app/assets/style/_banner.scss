@@ -1,0 +1,51 @@
+.banner {
+    @include size(100%, 396px);
+
+    background-image: url(../images/home-header-sm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+
+    @include pad() {
+        height: 787px;
+
+        background-image: url(../images/home-header.png);
+    }
+
+    &__title, &__subtitle {
+        color: #650300;
+        line-height: 1.5;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+
+        @include pad() {
+            font-size: 64px;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+
+        @include pad() {
+            font-size: 36px;
+        }
+    }
+
+    &__button {
+        display: block;
+        background-color: #AA0601;
+        color: #fff;
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+}
