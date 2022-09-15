@@ -1,0 +1,19 @@
+.store {
+    padding-top: 40px;
+
+    @include pad() {
+        padding-top: 80px;
+    }
+
+    @include desktop() {
+        padding-top: 96px;
+    }
+
+    &__text {
+        margin-bottom: 24px;
+
+        @include pad() {
+            margin-bottom: 32px;
+        }
+    }
+}
