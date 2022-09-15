@@ -11,3 +11,17 @@
         max-width: 1320px;
     }
 }
+
+// 單純用於首頁改道提示
+.hint {
+    text-align: center;
+    padding: 24px;
+}
+
+.page-title {
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
