@@ -5,6 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__logo {
@@ -25,17 +26,22 @@
 
     &__menu {
         display: none;
+        width: 100%;
         
         @include pad {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            width: auto;
         }
 
         &-item {
             font-size: 16px;
+            padding: 25px 32px;
+            text-align: center;
 
             @include pad() {
+                padding: 0;
                 margin-left: 64px;
                 font-size: 20px;
             }
