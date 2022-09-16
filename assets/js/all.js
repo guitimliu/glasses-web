@@ -1,7 +1,6 @@
 "use strict";
 
-console.log('Hello!');
-$(document).ready(function () {
-  console.log('HesSchool Hello!');
+$('.header__menu-button').click(function () {
+  $('.header__menu').toggle();
 });
 //# sourceMappingURL=all.js.map
