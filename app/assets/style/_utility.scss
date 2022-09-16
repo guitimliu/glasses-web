@@ -25,3 +25,16 @@
     line-height: 1.5;
     margin-bottom: 32px;
 }
+
+.btn-black {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
