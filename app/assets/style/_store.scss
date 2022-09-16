@@ -16,4 +16,43 @@
             margin-bottom: 32px;
         }
     }
+
+    &__location {
+        width: 276px;
+        border: 1px solid #CED4DA;
+        padding: 6px 12px;
+
+        @include pad() {
+            width: 304px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 80px;
+
+        &-item {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+        @include pad() {
+            display: flex;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 336px;
+
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+            }
+        }
+
+        @include desktop() {
+            &-item {
+                width: 416px;
+                margin-bottom: 48px;
+            }
+        }
+    }
 }
