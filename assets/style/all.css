@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  line-height: 1.5; }
+
 .container {
   max-width: 100%;
   margin: auto;
@@ -56,6 +59,16 @@ table {
     .container {
       max-width: 1320px; } }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .hint {
   text-align: center;
   padding: 24px; }
@@ -64,7 +77,6 @@ table {
   border-left: 8px solid #9F1213;
   padding-left: 16px;
   font-size: 48px;
-  line-height: 1.5;
   margin-bottom: 32px; }
 
 .btn-black {
@@ -130,8 +142,17 @@ table {
             -ms-flex-align: center;
                 align-items: center;
         width: auto; } }
+    .header__menu-button {
+      width: 60px;
+      height: 40px;
+      color: #fff; }
+      .header__menu-button-close {
+        width: 60px;
+        height: 40px;
+        color: #fff;
+        display: none; }
     .header__menu-item {
-      font-size: 16px;
+      font-size: 20px;
       padding: 25px 32px;
       text-align: center; }
       @media (min-width: 768px) {
@@ -231,8 +252,28 @@ table {
         margin-bottom: 36px; } }
     .footer__menu-item {
       margin-right: 48px; }
+  .footer__contact-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .footer__contact-item {
+        font-size: 36px; } }
   .footer__contact-item:not(:last-child) {
     margin-bottom: 8px; }
+  .footer__contact-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; }
+    @media (min-width: 768px) {
+      .footer__contact-icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 20px; } }
   .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,6 +333,10 @@ table {
     .store__list-item {
       max-width: 100%;
       margin-bottom: 24px; }
+      .store__list-item-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px; }
     @media (min-width: 768px) {
       .store__list {
         display: -webkit-box;
