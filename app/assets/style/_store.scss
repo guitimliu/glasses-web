@@ -21,6 +21,7 @@
         width: 276px;
         border: 1px solid #CED4DA;
         padding: 6px 12px;
+        // -webkit-appearance: none;
 
         @include pad() {
             width: 304px;
@@ -33,6 +34,11 @@
         &-item {
             max-width: 100%;
             margin-bottom: 24px;
+
+            &-icon {
+                @include size(18px);
+                margin-right: 10px;
+            }
         }
 
         @include pad() {
