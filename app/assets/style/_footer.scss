@@ -77,8 +77,28 @@
     }
 
     &__contact {
+        &-item {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+
+            @include pad() {
+                font-size: 36px;
+            }
+        }
+
         &-item:not(:last-child) {
             margin-bottom: 8px;
+        }
+
+        &-icon {
+            @include size(18px);
+            margin-right: 10px;
+
+            @include pad() {
+                @include size(36px);
+                margin-right: 20px;
+            }
         }
     }
 
