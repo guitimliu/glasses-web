@@ -1,3 +1,7 @@
+body {
+    line-height: 1.5;
+}
+
 .container {
     max-width: 100%;
     margin: auto;
@@ -12,6 +16,14 @@
     }
 }
 
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 // 單純用於首頁改道提示
 .hint {
     text-align: center;
@@ -22,7 +34,6 @@
     border-left: 8px solid #9F1213;
     padding-left: 16px;
     font-size: 48px;
-    line-height: 1.5;
     margin-bottom: 32px;
 }
 
